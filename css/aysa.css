@@ -1,0 +1,352 @@
+/* AYSA — landing visual sobre plantilla TemplateMonster */
+.bg-primary,
+.button-primary,
+.breadcrumbs-custom.bg-primary {
+  background-color: #0c1220 !important;
+}
+.button-primary {
+  background-color: #3ddcff !important;
+  border-color: #3ddcff !important;
+  color: #0c1220 !important;
+  font-weight: 700;
+}
+.button-primary:hover {
+  background-color: #5ce5ff !important;
+  border-color: #5ce5ff !important;
+}
+.text-light,
+.icon-primary,
+.icon-primary.mdi {
+  color: #3ddcff !important;
+}
+.rd-navbar-transparent.rd-navbar-static .rd-navbar-nav > li > a:hover,
+.rd-navbar-info a {
+  color: #3ddcff !important;
+}
+
+/* Sin franja gris placeholder arriba: navbar sobre el hero */
+.page-header.rd-navbar-transparent-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+}
+.page-header.rd-navbar-transparent-wrap .rd-navbar-bg {
+  display: none !important;
+}
+.swiper-slider-1 {
+  margin-top: 0 !important;
+}
+.swiper-slider-1 .swiper-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, rgba(12, 18, 32, 0.92) 0%, rgba(12, 18, 32, 0.55) 55%, rgba(12, 18, 32, 0.35) 100%);
+  z-index: 0;
+}
+.swiper-slider-1 .swiper-slide-caption {
+  position: relative;
+  z-index: 1;
+}
+.swiper-slide-caption h1 .d-block:last-child {
+  color: #3ddcff;
+}
+.button-block { width: 100%; margin-top: 8px; }
+.brand-logo-dark, .brand-logo-light { height: 44px; width: auto; }
+.footer-classic { background: #0c1220; color: #d7dee8; }
+
+/* Barra de confianza bajo hero */
+.aysa-stats {
+  background: #111827;
+  border-bottom: 3px solid #3ddcff;
+  padding: 18px 0;
+}
+.aysa-stats .stat-item {
+  text-align: center;
+  color: #fff;
+  padding: 8px;
+}
+.aysa-stats .stat-num {
+  display: block;
+  font-size: 28px;
+  font-weight: 900;
+  color: #3ddcff;
+  line-height: 1.1;
+}
+.aysa-stats .stat-label {
+  font-size: 13px;
+  color: #9fb0c8;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Bloque foto + texto */
+.aysa-split-img img {
+  border-radius: 4px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+.aysa-split-img .mini-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+.aysa-split-img .mini-grid img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.aysa-badge {
+  display: inline-block;
+  background: #3ddcff;
+  color: #0c1220;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 4px 10px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Universidades */
+.aysa-unis {
+  background: #0c1220;
+  padding: 50px 0 40px;
+}
+.aysa-unis h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.aysa-unis .sub {
+  color: #8b98ab;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 28px;
+}
+.aysa-uni-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.aysa-uni-card {
+  background: #151d2e;
+  border: 1px solid #2a364d;
+  border-radius: 8px;
+  padding: 16px 10px;
+  text-align: center;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.aysa-uni-card:hover {
+  transform: translateY(-4px);
+  border-color: #3ddcff;
+}
+.aysa-uni-card img,
+.aysa-uni-card .uni-logo {
+  width: auto;
+  max-width: 100%;
+  height: 56px;
+  margin-bottom: 8px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+.aysa-uni-card span {
+  display: block;
+  color: #d7dee8;
+  font-size: 13px;
+  font-weight: 600;
+}
+.aysa-uni-card--more {
+  border-style: dashed;
+  border-color: #3a4a63;
+}
+.aysa-uni-card--more:hover {
+  border-color: #3ddcff;
+}
+.aysa-uni-card--more .uni-more-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  background: rgba(61, 220, 255, 0.08);
+  border: 1px dashed #3ddcff;
+}
+.aysa-uni-card--more .uni-more-icon .mdi {
+  font-size: 36px;
+  line-height: 1;
+  color: #3ddcff;
+}
+.aysa-uni-card--more span {
+  color: #3ddcff;
+}
+
+/* Tarjetas de planes */
+.aysa-planes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 24px 0 32px;
+}
+.aysa-plan {
+  background: #fff;
+  border: 2px solid #e6e6e6;
+  padding: 20px 16px;
+  text-align: center;
+  position: relative;
+}
+.aysa-plan.destacado {
+  border-color: #3ddcff;
+  box-shadow: 0 12px 32px rgba(61, 220, 255, 0.2);
+  transform: scale(1.03);
+  z-index: 1;
+}
+.aysa-plan .ribbon {
+  position: absolute;
+  top: -1px;
+  right: 12px;
+  background: #3ddcff;
+  color: #0c1220;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+}
+.aysa-plan h4 { margin-bottom: 4px; }
+.aysa-plan .precio {
+  font-size: 32px;
+  font-weight: 900;
+  color: #0c1220;
+  margin: 8px 0;
+}
+.aysa-plan .precio small { font-size: 14px; font-weight: 400; }
+.aysa-plan ul {
+  text-align: left;
+  font-size: 14px;
+  padding-left: 18px;
+  margin: 12px 0 16px;
+  color: #555;
+}
+.aysa-plan.destacado .precio { color: #007a99; }
+
+/* Capítulos con iconos */
+.aysa-caps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 20px 0 28px;
+}
+.aysa-cap {
+  background: #f4f7fb;
+  border-left: 4px solid #3ddcff;
+  padding: 14px 12px;
+}
+.aysa-cap .icon {
+  font-size: 28px;
+  color: #3ddcff;
+  margin-bottom: 6px;
+}
+.aysa-cap h5 { font-size: 15px; margin-bottom: 4px; }
+.aysa-cap p { font-size: 13px; color: #666; margin: 0; }
+
+/* FAQ */
+.aysa-faq .card {
+  border: 1px solid #e6e6e6;
+  margin-bottom: 8px;
+}
+.aysa-faq .card-header {
+  background: #f4f7fb;
+  padding: 0;
+}
+.aysa-faq .card-header a {
+  display: block;
+  padding: 14px 18px;
+  color: #0c1220;
+  font-weight: 600;
+}
+.aysa-faq .card-body { font-size: 15px; color: #555; }
+
+/* CTA parallax */
+.aysa-cta {
+  background-image: url(../images/stock/cta-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 70px 0;
+  text-align: center;
+}
+.aysa-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 18, 32, 0.82);
+}
+.aysa-cta .container { position: relative; z-index: 1; }
+.aysa-cta h2 { color: #fff; margin-bottom: 12px; }
+.aysa-cta p { color: #c8d4e4; font-size: 18px; max-width: 560px; margin: 0 auto 24px; }
+
+/* Shell 2/3 + 1/3 */
+.aysa-shell { padding-top: 40px; padding-bottom: 60px; }
+.aysa-izq { padding-right: 12px; }
+.aysa-der { position: sticky; top: 90px; }
+.aysa-caja {
+  background: #151d2e;
+  color: #f4f7fb;
+  padding: 22px 20px;
+  border: 1px solid #2a364d;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+.aysa-caja h4, .aysa-caja label { color: #f4f7fb; }
+.aysa-caja p, .aysa-caja .fine { color: #8b98ab; font-size: 14px; }
+.aysa-caja select, .aysa-caja input[type="text"] {
+  width: 100%;
+  margin-bottom: 10px;
+  min-height: 42px;
+  border: 1px solid #2a364d;
+  background: #0c1220;
+  color: #fff;
+  padding: 8px 10px;
+}
+.aysa-tabla { width: 100%; border-collapse: collapse; margin: 16px 0 24px; }
+.aysa-tabla th, .aysa-tabla td { border: 1px solid #e6e6e6; padding: 8px 10px; }
+.aysa-tabla .marca { background: #e8fbff; }
+
+.wa-fijo {
+  position: fixed;
+  right: 18px;
+  bottom: 22px;
+  z-index: 9999;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  animation: wa-pulse 2s infinite;
+}
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45); }
+  50% { box-shadow: 0 6px 28px rgba(37, 211, 102, 0.75); }
+}
+
+@media (max-width: 991px) {
+  .aysa-der { position: relative; top: 0; margin-bottom: 28px; }
+  .aysa-uni-grid { grid-template-columns: repeat(3, 1fr); }
+  .aysa-planes { grid-template-columns: 1fr; }
+  .aysa-plan.destacado { transform: none; }
+  .aysa-caps { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 575px) {
+  .aysa-uni-grid { grid-template-columns: repeat(2, 1fr); }
+  .aysa-caps { grid-template-columns: 1fr; }
+}
