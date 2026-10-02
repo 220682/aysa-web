@@ -14,6 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
       "Etapa (plan, observaciones, sustentación…): " + capitulo,
       "Fecha límite: " + fecha
     ].join("\n");
-    window.location.href = "https://wa.me/51963554495?text=" + encodeURIComponent(text);
+    window.location.href = "https://wa.me/51942383876?text=" + encodeURIComponent(text);
   });
 });
