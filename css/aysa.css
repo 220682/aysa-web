@@ -350,3 +350,7 @@
   .aysa-uni-grid { grid-template-columns: repeat(2, 1fr); }
   .aysa-caps { grid-template-columns: 1fr; }
 }
+
+/* Boton Descargar brochure: legible sobre fotos oscuras */
+.button.aysa-descarga{color:#fff;border-color:rgba(255,255,255,.9);background:transparent}
+.button.aysa-descarga:hover,.button.aysa-descarga:focus{background:#3ddcff;border-color:#3ddcff;color:#0b1220}
